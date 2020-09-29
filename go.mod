@@ -1,4 +1,4 @@
-module github.com/fenglyu/terraform-provider-random/v3
+module github.com/fenglyu/terraform-provider-random
 
 go 1.14
 
