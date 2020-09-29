@@ -98,11 +98,11 @@ func ImportInteger(d *schema.ResourceData, meta interface{}) ([]*schema.Resource
 	}
 	d.Set("min", min)
 
-	max, err := strconv.Atoi(parts[2])
+	_, err = strconv.Atoi(parts[2])
 	if err != nil {
 		return nil, errwrap.Wrapf("Error parsing \"max\": {{err}}", err)
 	}
-	d.Set("max", max)
+	d.Set("max", min)
 
 	if len(parts) == 4 {
 		d.Set("seed", parts[3])
