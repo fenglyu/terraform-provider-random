@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
 
-	"github.com/fenglyu/terraform-provider-random/internal/provider"
+	"github.com/fenglyu/terraform-provider-random/v3/internal/provider"
 )
 
 func main() {
